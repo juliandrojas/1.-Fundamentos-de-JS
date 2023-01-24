@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de JS</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        //Section of Modals
+        //The user write the value of the variable
+        let username = prompt("¿Cuál es tu nombre?");
+        //The user select the value of the variable
+        let isProgrammer = confirm("¿Eres programador?");
+        alert(username+" es programador: "+ isProgrammer);
+        //Loops
+        let n = 0;
+        while (n < 3) {
+            n++;
+        }
+        console.log(n);
+        //Output 3
+        const loop = 1;
+        let result = '';
+        let i = 0;
+        do {
+            i = i + 1;
+            result = result + i;
+        } while (i < 5);
+        console.log(result);
+        //Output 12345
+        let str = '';
+        for (let i = 0; i < 9; i++) {
+            str = str + i;
+        }
+        console.log(str);
+        //Output 012345678
+        //Conditionals 
+        //First Example
+        let age = prompt("¿Cual es tu edad?");
+        //No toma el 18
+        if(age < 18) {
+            alert("Eres menor de edad!");
+        }
+        //Toma el 18
+        else if(age >= 18) {
+            alert("Eres mayor de edad");
+        }
+    </script>
+</head>
+<body>
+    <h1>Fundamentos de JavaScript</h1>
+</body>
+</html>
